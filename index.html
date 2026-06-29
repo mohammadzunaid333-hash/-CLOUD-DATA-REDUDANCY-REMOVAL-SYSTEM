@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Data Redundancy Removal System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>
+        <i class="fa-solid fa-cloud"></i>
+        Cloud Data Redundancy Removal System
+    </h1>
+
+    <p class="subtitle">
+        Store only unique records and remove redundant data.
+    </p>
+
+    <!-- Status Cards -->
+    <div class="cards">
+
+        <div class="card">
+            <h2 id="totalRecords">0</h2>
+            <p>Total Records</p>
+        </div>
+
+        <div class="card">
+            <h2>Connected</h2>
+            <p>Database Status</p>
+        </div>
+
+    </div>
+
+    <!-- Input Section -->
+
+    <div class="input-area">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter Name"
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter Email"
+        >
+
+        <button onclick="addRecord()">
+            <i class="fa-solid fa-plus"></i>
+            Add Record
+        </button>
+
+    </div>
+
+    <!-- Message -->
+
+    <p id="message"></p>
+
+    <!-- Search -->
+
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Search by Name or Email..."
+        onkeyup="loadRecords()"
+    >
+
+    <!-- Records -->
+
+    <h2>Stored Records</h2>
+
+    <table id="recordTable">
+
+        <thead>
+
+            <tr>
+
+                <th>Name</th>
+                <th>Email</th>
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+        </tbody>
+
+    </table>
+
+    <br>
+
+    <button id="exportBtn" class="export-btn">
+        <i class="fa-solid fa-download"></i>
+        Export CSV
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
