@@ -1,4 +1,4 @@
-# ☁️ Data Redundancy Removal System
+# ☁️ CodeAplha-Data Redundancy Removal System
 
 A modern full-stack web application that detects and removes duplicate records before storing them in the database. Built using **FastAPI, SQLite, HTML, CSS, and JavaScript**, this project demonstrates CRUD operations, REST APIs, and database integration.
 
